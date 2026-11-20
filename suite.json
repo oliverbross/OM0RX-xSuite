@@ -1,0 +1,322 @@
+{
+  "schema": 1,
+  "updated": "2026-11-20T23:13:56Z",
+  "apps": [
+    {
+      "id": "xlog",
+      "name": "OM0RX-xLog",
+      "summary": "Local-first logbook with an Operator Desk, world and band maps, cluster, Wavelog sync, contesting and station control.",
+      "role": "core",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "page": "apps/xlog.md",
+      "icon": "images/xlog-icon.png",
+      "installer_format": "nsis",
+      "releases": [
+        {
+          "version": "1.6.74",
+          "tag": "xlog-v1.6.74",
+          "date": "2026-11-19T21:46:18Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xlog-v1.6.74",
+          "source_commit": "3a9abd5b00f5f619ecdfaa9536e592bc1a057752",
+          "source_snapshot": "cea297c47302363463effcd6a762e3ac82bfc7a8",
+          "source": {
+            "file": "OM0RX-xLog-1.6.74-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-source.zip",
+            "sha256": "8283d3dc1a784d10ca1f9425857dc1cab471beaded0109a70f85aa2abeb405ee",
+            "size": 22820685
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "zip",
+              "file": "OM0RX-xLog-1.6.74-windows-x86_64.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64.zip",
+              "sha256": "49d3849c312117249d942f2467d518f691526247cefe11ed6d7d2fc92a29c9d9",
+              "size": 87659923
+            },
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "nsis",
+              "variant": "all-users",
+              "file": "OM0RX-xLog-1.6.74-windows-x86_64-all-users-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64-all-users-setup.exe",
+              "sha256": "3c44be7c4e80853e2d81a093cd1f05c0bbad08b9d2c87dc5093c4df7ecc665f5",
+              "size": 61458561
+            },
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "nsis",
+              "variant": "current-user",
+              "file": "OM0RX-xLog-1.6.74-windows-x86_64-current-user-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64-current-user-setup.exe",
+              "sha256": "9131b4f728cb75d1e5e9146a20d5745cac3a81eb2cca55ee52129b6661c53ab8",
+              "size": 61462638
+            }
+          ]
+        },
+        {
+          "version": "1.6.0",
+          "tag": "xlog-v1.6.0",
+          "date": "2026-11-11T11:13:30Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xlog-v1.6.0",
+          "source_commit": "6874a161c66775f75d8168246a2861407a9511e9",
+          "source": {
+            "file": "OM0RX-xLog-1.6.0-source.tar.gz",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-source.tar.gz",
+            "sha256": "87adc69d2cffef9fb19386ad17e7f46bcd305fa00fdd7fec68a88f803d82001b",
+            "size": 21548619
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "zip",
+              "file": "OM0RX-xLog-1.6.0-windows-x86_64.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-windows-x86_64.zip",
+              "sha256": "374784fc403e787c03ec85c5b1353e81f777b25d8a263c02e934abc5ea47dce2",
+              "size": 82707982
+            },
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "nsis",
+              "variant": "all-users",
+              "file": "OM0RX-xLog-1.6.0-windows-x86_64-all-users-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-windows-x86_64-all-users-setup.exe",
+              "sha256": "de23bf935d1dddc0958ff35e325274bad9e18b4a7298cfe97c15378e38c22e4a",
+              "size": 58059269
+            },
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "nsis",
+              "variant": "current-user",
+              "file": "OM0RX-xLog-1.6.0-windows-x86_64-current-user-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-windows-x86_64-current-user-setup.exe",
+              "sha256": "8002ab220d818d3cdb6b2e3d71b7c9e8b6e48e058daf33065ab0abd8b7d1e016",
+              "size": 58051056
+            },
+            {
+              "platform": "macos",
+              "arch": "arm64",
+              "format": "dmg",
+              "file": "OM0RX-xLog-1.6.0-macOS-arm64.dmg",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-macOS-arm64.dmg",
+              "sha256": "469c06f3d39c82f1d47ce54718beb903eed3ea73897d23e005624ab77315469d",
+              "size": 57402477
+            },
+            {
+              "platform": "macos",
+              "arch": "arm64",
+              "format": "zip",
+              "file": "OM0RX-xLog-1.6.0-macOS-arm64.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-macOS-arm64.zip",
+              "sha256": "b19179b78852a19408914c1271af31b39fecd691c28e30cd1aee1b260eabf11c",
+              "size": 45623251
+            },
+            {
+              "platform": "linux",
+              "arch": "x86_64",
+              "format": "deb",
+              "file": "OM0RX-xLog-1.6.0-Linux-x64.deb",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-Linux-x64.deb",
+              "sha256": "95e95fbca3ec23bb2314da9676ae506a5d33d75bf944a650d8a0bda4b270d745",
+              "size": 61659554
+            },
+            {
+              "platform": "linux",
+              "arch": "x86_64",
+              "format": "tar.gz",
+              "file": "OM0RX-xLog-1.6.0-Linux-x64.tar.gz",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-Linux-x64.tar.gz",
+              "sha256": "db2d270c45e76ca77412a0d8a1c4e14cf5156c7a4a95ef4e6c6afd7c4b02d53c",
+              "size": 82049440
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xnexus",
+      "name": "OM0RX-xNexus",
+      "summary": "Nexus (by KD9TAW) set up beside xLog: FT8/FT4 and ten more modes, with xLog's call and DXCC status in the roster.",
+      "role": "core",
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "page": "apps/xnexus.md",
+      "installer_format": "nsis",
+      "releases": [
+        {
+          "version": "1.25.0-xlog.17",
+          "tag": "xnexus-v1.25.0-xlog.17",
+          "date": "2026-11-19T22:13:28Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xnexus-v1.25.0-xlog.17",
+          "source_commit": "d66a1bc7ad000ff1659d00a669eacca4269c9dee",
+          "source": {
+            "file": "OM0RX-xNexus-1.25.0-xlog.17-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xnexus-v1.25.0-xlog.17/OM0RX-xNexus-1.25.0-xlog.17-source.zip",
+            "sha256": "076db40921428ba734724cd8081bad89cd9fca1ac7c596852b58eb8d6b6a4cbc",
+            "size": 61794264
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "nsis",
+              "file": "OM0RX-xNexus_1.25.0-xlog.17_x64-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xnexus-v1.25.0-xlog.17/OM0RX-xNexus_1.25.0-xlog.17_x64-setup.exe",
+              "sha256": "332c3a591ace9315d1bb89c2dd939af926989c0bc640f71e51bc3cc12a43e7a5",
+              "size": 276249319
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xskimmer",
+      "name": "OM0RX-xSkimmer",
+      "summary": "CW skimmer for FlexRadio and TCI radios: decodes every CW signal in the passband with a neural decoder and spots CQs.",
+      "role": "core",
+      "platforms": [
+        "windows"
+      ],
+      "page": "apps/xskimmer.md",
+      "installer_format": "inno",
+      "releases": []
+    },
+    {
+      "id": "xagent",
+      "name": "OM0RX-xAgent",
+      "summary": "Remote Station Agent: runs beside the radio, owns the FLEX-8400, KPA500 and KAT500, and serves the station to remote clients.",
+      "role": "service",
+      "platforms": [
+        "windows"
+      ],
+      "page": "apps/xagent.md",
+      "source_is_download": true,
+      "releases": []
+    },
+    {
+      "id": "xcat",
+      "name": "OM0RX-xCat",
+      "summary": "Mac FlexRadio CAT and RigCtlD bridge with SmartLink, station monitor, RUMlog spots and rotator control.",
+      "role": "companion",
+      "platforms": [
+        "macos"
+      ],
+      "page": "apps/xcat.md",
+      "icon": "images/xcat-icon.png",
+      "releases": [
+        {
+          "version": "0.5.1",
+          "tag": "xcat-v0.5.1",
+          "date": "2026-10-11T00:56:09Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xcat-v0.5.1",
+          "source_commit": "d10e82c626efd8ff67fe011fd6590fbaeeca1ccb",
+          "source": {
+            "file": "OM0RX-xCat-0.5.1-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xcat-v0.5.1/OM0RX-xCat-0.5.1-source.zip",
+            "sha256": "9fd6388b591058dedd0c411711ce6255ca08868bb7615f81d173da76192eb63a",
+            "size": 4920748
+          },
+          "downloads": [
+            {
+              "platform": "macos",
+              "arch": "arm64",
+              "format": "zip",
+              "file": "OM0RX-xCat-v0.5.1-macOS.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xcat-v0.5.1/OM0RX-xCat-v0.5.1-macOS.zip",
+              "sha256": "411014ec60a2b911cc738ca3b3ab3fc9adc4d2ba37e3bba6d3a34f0200b70e03",
+              "size": 3244675
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xcluster",
+      "name": "OM0RX-xCluster",
+      "summary": "Mac DX-cluster client that classifies spots against your log and hands them to xLog or RUMlogNG.",
+      "role": "companion",
+      "platforms": [
+        "macos"
+      ],
+      "page": "apps/xcluster.md",
+      "icon": "images/xcluster-icon.png",
+      "releases": [
+        {
+          "version": "0.1.6",
+          "tag": "xcluster-v0.1.6",
+          "date": "2026-10-11T04:16:50Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xcluster-v0.1.6",
+          "source_commit": "776b7b04ffa5a9057f1e909339393549a103836b",
+          "source_snapshot": "63ebe88961495a91027d101c7012654d0366b436",
+          "source": {
+            "file": "OM0RX-xCluster-0.1.6-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xcluster-v0.1.6/OM0RX-xCluster-0.1.6-source.zip",
+            "sha256": "446057491bdf5103246487ca99466f0446a2dfa8bbf89268fe0699d5bf1f972e",
+            "size": 4250289
+          },
+          "downloads": [
+            {
+              "platform": "macos",
+              "arch": "arm64",
+              "format": "zip",
+              "file": "OM0RX-xCluster-0.1.6-macOS.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xcluster-v0.1.6/OM0RX-xCluster-0.1.6-macOS.zip",
+              "sha256": "74de6c85712fd0b71f3829ca3f3f76b01d96ef8562c2237f6b3bd13a232cd959",
+              "size": 3105869
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xbridge",
+      "name": "OM0RX-xBridge",
+      "summary": "Mac two-way sync between RUMlogNG and Wavelog (API v2), without ever writing to the RUMlog database.",
+      "role": "companion",
+      "platforms": [
+        "macos"
+      ],
+      "page": "apps/xbridge.md",
+      "icon": "images/xbridge-icon.png",
+      "releases": [
+        {
+          "version": "0.3.0",
+          "tag": "xbridge-v0.3.0",
+          "date": "2026-10-11T00:56:08Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xbridge-v0.3.0",
+          "source_commit": "1b553156632f9d73dbf4633bedea45245bbf00ba",
+          "source": {
+            "file": "OM0RX-xBridge-0.3.0-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xbridge-v0.3.0/OM0RX-xBridge-0.3.0-source.zip",
+            "sha256": "bc85c958709c7a53ed10e93e9a199a2896c68ea7c98c7d0a2883875f8d143322",
+            "size": 3485566
+          },
+          "downloads": [
+            {
+              "platform": "macos",
+              "arch": "arm64",
+              "format": "zip",
+              "file": "OM0RX-xBridge-v0.3.0-macOS.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xbridge-v0.3.0/OM0RX-xBridge-v0.3.0-macOS.zip",
+              "sha256": "1fc7b06f333a4bae6494d62583e43c8305e9c4d381b49a06faedc56cc9ccdef6",
+              "size": 2605642
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

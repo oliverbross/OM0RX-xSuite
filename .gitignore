@@ -1,0 +1,4 @@
+staging/
+images/src/
+__pycache__/
+*.pyc
