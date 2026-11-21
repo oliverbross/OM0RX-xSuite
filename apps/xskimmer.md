@@ -1,7 +1,7 @@
 # OM0RX-xSkimmer
 
-**A CW skimmer for FlexRadio and TCI radios.** It takes the radio's wideband
-IQ, finds every CW signal, decodes each one with the DeepCW neural model, works
+**A CW skimmer for FlexRadio, TCI radios and receive-only SDRs.** It takes the
+radio's wideband IQ, finds every CW signal, decodes each one with the DeepCW neural model, works
 out who is calling CQ, and shows it all on a band map, a signal list and a spot
 list.
 
@@ -27,7 +27,23 @@ list.
   your choice: CW, USB, LSB, AM or FM, with filter, pitch, volume, noise
   blanker and noise reduction. The radio stays where it is.
 - **FlexRadio without using a receiver slot:** binds to SmartSDR or Maestro as
-  an API client and skims that client's own panadapter through DAX IQ.
+  an API client and skims that client's own panadapter through DAX IQ, and
+  optionally the operator's second panadapter too.
+- **SDR receivers, no transceiver needed (new in 0.10):** an **RTL-SDR** through
+  `rtl_tcp` (V4, V3 direct sampling or an upconverter; also from a Raspberry Pi
+  at the antenna), an **Airspy HF+ / Discovery** (up to 500 kHz of one band), or
+  a **Hermes-Lite 2** with up to four receivers on four bands at once. Receive
+  only: a Hermes-Lite 2 is never keyed.
+- **Several bands at once:** one decoder per 100 kHz window; dots on the band
+  buttons show what is decoded and a click switches the waterfall.
+- **Frequency correction from the RBN:** an SDR's crystal error is measured
+  against RBN skimmers hearing the same stations and corrected automatically.
+- **Dupes and new ones:** your ADIF log, N1MM+ contact broadcasts or a logger
+  on the decoded-text port mark each station **NEW** (DXCC entity), **BAND** or
+  **WKD**; the **Needed** filter shows only what you need.
+- **Spot confidence and Save IQ:** each spot shows how sure the call is (and the
+  remote cluster can get only the sure ones); Save IQ keeps the last minutes of
+  live IQ as a recording.
 - **TCI radios:** SunSDR (ExpertSDR), ANAN (Thetis) and any radio behind
   AetherSDR's TCI server.
 - **Spots everywhere:** a local telnet server for your logger, an optional
@@ -44,15 +60,18 @@ list.
 |---|---|
 | ![Listening in the app on N2NT, with the live copy under the map](../images/xskimmer-listen.png) | ![RUN mode: the stations calling around the run frequency](../images/xskimmer-run.png) |
 | Listening in CW on N2NT, with its copy in the decoder strip | RUN mode: W0PR calling W2RQ, zoomed on the run window |
+| ![NEW and WKD from the log on the band map](../images/xskimmer-needed.png) | ![A Hermes-Lite 2 skimming 40 m and 30 m, waterfall on 30 m](../images/xskimmer-multiband.png) |
+| NEW (Georgia, Puerto Rico) and WKD (dupes, dimmed) from a test log | Two bands at once (dots on 40 and 30); the waterfall shows 30 m |
 
 ## Download
 
 <!-- xsuite:downloads -->
-- **Windows** — 0.9.0: [installer](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.9.0/OM0RX-xSkimmer-0.9.0-setup.exe) 57 MB
+- **Windows** — 0.10.0: [installer](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.10.0/OM0RX-xSkimmer-0.10.0-setup.exe) 57 MB
 <!-- /xsuite:downloads -->
 
-Requires Windows 10/11 x64 and a FlexRadio (SmartSDR or Maestro running) or a
-TCI radio. The installer upgrades earlier OM0RX Skimmer versions in place and
+Requires Windows 10/11 x64 and a FlexRadio (SmartSDR or Maestro running), a
+TCI radio, or an SDR: RTL-SDR with rtl_tcp, Airspy HF+ (with airspyhf.dll from
+SDR# or Airspy) or Hermes-Lite 2. The installer upgrades earlier OM0RX Skimmer versions in place and
 keeps your settings.
 
 ## Release history
@@ -60,5 +79,6 @@ keeps your settings.
 <!-- xsuite:history -->
 | Version | Date | Platforms | Notes | Source |
 |---|---|---|---|---|
+| 0.10.0 | 2026-11-21 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v0.10.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.10.0/OM0RX-xSkimmer-0.10.0-source.zip) `25f2c2205e` |
 | 0.9.0 | 2026-11-21 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v0.9.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.9.0/OM0RX-xSkimmer-0.9.0-source.zip) `21ceb62fe7` |
 <!-- /xsuite:history -->

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-21T02:49:21Z",
+  "updated": "2026-11-21T04:18:26Z",
   "apps": [
     {
       "id": "xlog",
@@ -210,7 +210,7 @@
     {
       "id": "xskimmer",
       "name": "OM0RX-xSkimmer",
-      "summary": "CW skimmer for FlexRadio and TCI radios: decodes every CW signal with a neural decoder, tags who is calling whom, and adds RUN mode, RBN feed and in-app listening.",
+      "summary": "CW skimmer for FlexRadio, TCI radios and SDRs (RTL-SDR, Airspy HF+, Hermes-Lite 2): decodes every CW signal with a neural decoder on several bands at once, tags who is calling whom, and marks dupes and new ones from your log.",
       "role": "core",
       "platforms": [
         "windows"
@@ -218,6 +218,30 @@
       "page": "apps/xskimmer.md",
       "installer_format": "inno",
       "releases": [
+        {
+          "version": "0.10.0",
+          "tag": "xskimmer-v0.10.0",
+          "date": "2026-11-21T04:18:26Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v0.10.0",
+          "source_commit": "25f2c2205eca31f91c53c455bc9b9d5af8d9528f",
+          "source": {
+            "file": "OM0RX-xSkimmer-0.10.0-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.10.0/OM0RX-xSkimmer-0.10.0-source.zip",
+            "sha256": "903b2f21058e6d29e1ae0fb33663f9485ae03883988e9b93e967d3c0f67ba19a",
+            "size": 14366490
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "inno",
+              "file": "OM0RX-xSkimmer-0.10.0-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.10.0/OM0RX-xSkimmer-0.10.0-setup.exe",
+              "sha256": "cbcf1a3775d821b6fce1fe6d9332d1d0cbfad320aebeee81817417f42c8a9248",
+              "size": 57003954
+            }
+          ]
+        },
         {
           "version": "0.9.0",
           "tag": "xskimmer-v0.9.0",
