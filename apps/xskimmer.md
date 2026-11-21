@@ -66,7 +66,7 @@ list.
 ## Download
 
 <!-- xsuite:downloads -->
-- **Windows** — 1.1.0: [installer](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.1.0/OM0RX-xSkimmer-1.1.0-setup.exe) 57 MB
+- **Windows** — 1.2.0: [installer](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.2.0/OM0RX-xSkimmer-1.2.0-setup.exe) 57 MB
 <!-- /xsuite:downloads -->
 
 Requires Windows 10/11 x64 and a FlexRadio (SmartSDR or Maestro running), a
@@ -79,6 +79,7 @@ keeps your settings.
 <!-- xsuite:history -->
 | Version | Date | Platforms | Notes | Source |
 |---|---|---|---|---|
+| 1.2.0 | 2026-11-21 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.2.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.2.0/OM0RX-xSkimmer-1.2.0-source.zip) `4242b76a5b` |
 | 1.1.0 | 2026-11-21 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.1.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.1.0/OM0RX-xSkimmer-1.1.0-source.zip) `f0b8f1c507` |
 | 1.0.0 | 2026-11-21 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.0.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.0.0/OM0RX-xSkimmer-1.0.0-source.zip) `214f228981` |
 | 0.10.0 | 2026-11-21 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v0.10.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.10.0/OM0RX-xSkimmer-0.10.0-source.zip) `25f2c2205e` |
