@@ -73,13 +73,19 @@ def now_iso() -> str:
     return dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
+def write_lf(path: Path, text: str) -> None:
+    """Write UTF-8 text with LF line endings on every OS, so SHA256SUMS checks on Linux and macOS."""
+    with path.open("w", encoding="utf-8", newline="\n") as f:
+        f.write(text)
+
+
 def load_manifest() -> dict:
     return json.loads(MANIFEST.read_text(encoding="utf-8"))
 
 
 def save_manifest(data: dict) -> None:
     data["updated"] = now_iso()
-    MANIFEST.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_lf(MANIFEST, json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
 
 def find_app(data: dict, app_id: str) -> dict:
@@ -224,21 +230,21 @@ def cmd_stage(args) -> None:
 
     files = sorted(p for p in out.iterdir() if p.is_file() and p.name not in ("SHA256SUMS", "release-notes.md"))
     sums = {p.name: sha256(p) for p in files}
-    (out / "SHA256SUMS").write_text("".join(f"{h}  {n}\n" for n, h in sums.items()), encoding="utf-8")
+    write_lf(out / "SHA256SUMS", "".join(f"{h}  {n}\n" for n, h in sums.items()))
 
     if not (out / "PROVENANCE.json").exists():
-        (out / "PROVENANCE.json").write_text(json.dumps({
+        write_lf(out / "PROVENANCE.json", json.dumps({
             "product": app["name"], "version": args.version, "source_commit": args.commit,
             "staged": now_iso(), "staged_on": host_platform.node(),
             "files": {n: {"sha256": h, "bytes": (out / n).stat().st_size} for n, h in sums.items()},
-        }, indent=2) + "\n", encoding="utf-8")
+        }, indent=2) + "\n")
 
     origin = (f"public source snapshot `{args.source_ref[:12]}` of build commit `{args.commit[:12]}`"
               if args.source_ref and args.source_ref != args.commit else f"commit `{args.commit[:12]}`")
     footer = (f"\n\n---\n**Source code:** `{src.name}` is the complete source of this release"
               f" ({origin}), provided under GPL-3.0-only."
               f" Verify downloads with `SHA256SUMS`; build details are in `PROVENANCE.json`.\n")
-    (out / "release-notes.md").write_text(notes.rstrip() + footer, encoding="utf-8")
+    write_lf(out / "release-notes.md", notes.rstrip() + footer)
 
     downloads = []
     for p in files:
@@ -376,13 +382,13 @@ def replace_block(text: str, name: str, body: str) -> str:
 def cmd_render(_args) -> None:
     data = load_manifest()
     readme = ROOT / "README.md"
-    readme.write_text(replace_block(readme.read_text(encoding="utf-8"), "apps", apps_table(data)), encoding="utf-8")
+    write_lf(readme, replace_block(readme.read_text(encoding="utf-8"), "apps", apps_table(data)))
     for app in data["apps"]:
         page = ROOT / app["page"]
         text = page.read_text(encoding="utf-8")
         text = replace_block(text, "downloads", app_downloads(app))
         text = replace_block(text, "history", app_history(app))
-        page.write_text(text, encoding="utf-8")
+        write_lf(page, text)
     print(f"rendered README.md and {len(data['apps'])} app pages")
 
 
