@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-20T23:13:56Z",
+  "updated": "2026-11-21T02:16:00Z",
   "apps": [
     {
       "id": "xlog",
@@ -16,6 +16,31 @@
       "icon": "images/xlog-icon.png",
       "installer_format": "nsis",
       "releases": [
+        {
+          "version": "1.6.77",
+          "tag": "xlog-v1.6.77",
+          "date": "2026-11-21T02:16:00Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xlog-v1.6.77",
+          "source_commit": "a5bbef1e623f8b9b3f214f896610776825c99287",
+          "source_snapshot": "606cf8c295a2a6577aaf589b1b8ba8bc01365ef7",
+          "source": {
+            "file": "OM0RX-xLog-1.6.77-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.77/OM0RX-xLog-1.6.77-source.zip",
+            "sha256": "a81a7068574e8ce35a5d39b0d0e6a7d44da212679d92f002f8734f586a2abf73",
+            "size": 22810492
+          },
+          "downloads": [
+            {
+              "platform": "macos",
+              "arch": "arm64",
+              "format": "zip",
+              "file": "OM0RX-xLog-1.6.77-macOS-arm64.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.77/OM0RX-xLog-1.6.77-macOS-arm64.zip",
+              "sha256": "b12e8005ee53b305a2f74479d66de54e8bcfbeed3b45d52d8bb85105d1bb365f",
+              "size": 58979857
+            }
+          ]
+        },
         {
           "version": "1.6.74",
           "tag": "xlog-v1.6.74",

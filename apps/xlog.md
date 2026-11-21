@@ -36,7 +36,7 @@ optional extras you switch on when you want them.
 
 <!-- xsuite:downloads -->
 - **Windows** — 1.6.74: [installer (current user)](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64-current-user-setup.exe) 61 MB · [ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64.zip) 88 MB · [installer (all users)](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64-all-users-setup.exe) 61 MB
-- **macOS** — 1.6.0: [DMG](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-macOS-arm64.dmg) 57 MB · [ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-macOS-arm64.zip) 46 MB
+- **macOS** — 1.6.77: [ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.77/OM0RX-xLog-1.6.77-macOS-arm64.zip) 59 MB
 - **Linux** — 1.6.0: [.deb](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-Linux-x64.deb) 62 MB · [.tar.gz](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-Linux-x64.tar.gz) 82 MB
 <!-- /xsuite:downloads -->
 
@@ -58,6 +58,7 @@ in your workspace and are not touched by the installer.
 <!-- xsuite:history -->
 | Version | Date | Platforms | Notes | Source |
 |---|---|---|---|---|
+| 1.6.77 | 2026-11-21 | macOS | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xlog-v1.6.77) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.77/OM0RX-xLog-1.6.77-source.zip) `a5bbef1e62` |
 | 1.6.74 | 2026-11-19 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xlog-v1.6.74) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-source.zip) `3a9abd5b00` |
 | 1.6.0 | 2026-11-11 | Windows, macOS, Linux | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xlog-v1.6.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-source.tar.gz) `6874a161c6` |
 <!-- /xsuite:history -->
