@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-21T02:16:00Z",
+  "updated": "2026-11-21T02:49:21Z",
   "apps": [
     {
       "id": "xlog",
@@ -210,14 +210,39 @@
     {
       "id": "xskimmer",
       "name": "OM0RX-xSkimmer",
-      "summary": "CW skimmer for FlexRadio and TCI radios: decodes every CW signal in the passband with a neural decoder and spots CQs.",
+      "summary": "CW skimmer for FlexRadio and TCI radios: decodes every CW signal with a neural decoder, tags who is calling whom, and adds RUN mode, RBN feed and in-app listening.",
       "role": "core",
       "platforms": [
         "windows"
       ],
       "page": "apps/xskimmer.md",
       "installer_format": "inno",
-      "releases": []
+      "releases": [
+        {
+          "version": "0.9.0",
+          "tag": "xskimmer-v0.9.0",
+          "date": "2026-11-21T02:49:21Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v0.9.0",
+          "source_commit": "21ceb62fe79c90a8e2e1fb9a596fcb1cd9cf4f21",
+          "source": {
+            "file": "OM0RX-xSkimmer-0.9.0-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.9.0/OM0RX-xSkimmer-0.9.0-source.zip",
+            "sha256": "90b70706c79d20fa6c7cbcdac931381ef0c4a6eb9e145f78a9efba2b49614493",
+            "size": 14301447
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "inno",
+              "file": "OM0RX-xSkimmer-0.9.0-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v0.9.0/OM0RX-xSkimmer-0.9.0-setup.exe",
+              "sha256": "61d47f4c345069caa6aacb4704d2a77ec6339b9e6043e6c6e3823a07cb5eab64",
+              "size": 56957214
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "xagent",
