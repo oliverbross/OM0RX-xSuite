@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-21T23:55:29Z",
+  "updated": "2026-11-22T00:12:00Z",
   "apps": [
     {
       "id": "xlog",
@@ -218,6 +218,30 @@
       "page": "apps/xskimmer.md",
       "installer_format": "inno",
       "releases": [
+        {
+          "version": "1.3.2",
+          "tag": "xskimmer-v1.3.2",
+          "date": "2026-11-22T00:12:00Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.3.2",
+          "source_commit": "dc4f32a29e45c56adfbd0baaef33617e28b93370",
+          "source": {
+            "file": "OM0RX-xSkimmer-1.3.2-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.3.2/OM0RX-xSkimmer-1.3.2-source.zip",
+            "sha256": "4cb59761cc3b6e0ffb0e990637a08700efbfa225f3bf89c98bf99c12c2aadb36",
+            "size": 14428304
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "inno",
+              "file": "OM0RX-xSkimmer-1.3.2-setup.exe",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.3.2/OM0RX-xSkimmer-1.3.2-setup.exe",
+              "sha256": "70afdcd932484deb86bffd0bc31cbd8ecebace8beb7ac2b8d05d50dc4456bddf",
+              "size": 57034195
+            }
+          ]
+        },
         {
           "version": "1.3.1",
           "tag": "xskimmer-v1.3.1",
