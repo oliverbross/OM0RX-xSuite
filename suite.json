@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-23T07:23:11Z",
+  "updated": "2026-11-23T10:10:38Z",
   "apps": [
     {
       "id": "xlog",
@@ -518,7 +518,33 @@
       ],
       "page": "apps/xagent.md",
       "source_is_download": true,
-      "releases": []
+      "releases": [
+        {
+          "version": "2.0.10",
+          "tag": "xagent-v2.0.10",
+          "date": "2026-11-23T10:10:38Z",
+          "notes": "https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xagent-v2.0.10",
+          "source_commit": "0f4dcc3d36d1c1bf48903f1b7b3836bba2316f36",
+          "source_snapshot": "6e2fdce534c9aeb8afa342fc7f473ae6a01ab37c",
+          "source": {
+            "file": "OM0RX-xAgent-2.0.10-source.zip",
+            "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xagent-v2.0.10/OM0RX-xAgent-2.0.10-source.zip",
+            "sha256": "f60d0dc4210c2bb9410660d569393320af775e975e7a8f3e38127c8bac961d7a",
+            "size": 356146
+          },
+          "downloads": [
+            {
+              "platform": "windows",
+              "arch": "x86_64",
+              "format": "source-zip",
+              "file": "OM0RX-xAgent-2.0.10-source.zip",
+              "url": "https://github.com/oliverbross/OM0RX-xSuite/releases/download/xagent-v2.0.10/OM0RX-xAgent-2.0.10-source.zip",
+              "sha256": "f60d0dc4210c2bb9410660d569393320af775e975e7a8f3e38127c8bac961d7a",
+              "size": 356146
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "xcat",

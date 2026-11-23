@@ -14,7 +14,7 @@ published here.
 | <img src="images/xlog-icon.png" width="40" alt=""> | [**OM0RX-xLog**](apps/xlog.md) | Local-first logbook with an Operator Desk, world and band maps, cluster, Wavelog sync, contesting and station control. | [**1.6.74**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.74/OM0RX-xLog-1.6.74-windows-x86_64-current-user-setup.exe) | [**1.6.77**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.77/OM0RX-xLog-1.6.77-macOS-arm64.zip) | [**1.6.0**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xlog-v1.6.0/OM0RX-xLog-1.6.0-Linux-x64.deb) |
 |  | [**OM0RX-xNexus**](apps/xnexus.md) | Nexus (by KD9TAW) set up beside xLog: FT8/FT4 and ten more modes, with xLog's call and DXCC status in the roster. | [**1.25.0-xlog.17**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xnexus-v1.25.0-xlog.17/OM0RX-xNexus_1.25.0-xlog.17_x64-setup.exe) | soon | soon |
 |  | [**OM0RX-xSkimmer**](apps/xskimmer.md) | CW skimmer for FlexRadio, TCI radios and SDRs (RTL-SDR, Airspy HF+, Hermes-Lite 2, MSi2500, SDRplay): decodes every CW signal with a neural decoder on several bands at once, tags who is calling whom, and shows xLog's worked/confirmed status (CS / DS) for every call. | [**1.4.3**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.3/OM0RX-xSkimmer-1.4.3-setup.exe) | — | — |
-|  | [**OM0RX-xAgent**](apps/xagent.md) | Remote Station Agent: runs beside the radio, owns the FLEX-8400, KPA500 and KAT500, and serves the station to remote clients. | soon | — | — |
+|  | [**OM0RX-xAgent**](apps/xagent.md) | Remote Station Agent: runs beside the radio, owns the FLEX-8400, KPA500 and KAT500, and serves the station to remote clients. | [**2.0.10**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xagent-v2.0.10/OM0RX-xAgent-2.0.10-source.zip) | — | — |
 | <img src="images/xcat-icon.png" width="40" alt=""> | [**OM0RX-xCat**](apps/xcat.md) | Mac FlexRadio CAT and RigCtlD bridge with SmartLink, station monitor, RUMlog spots and rotator control. | — | [**0.5.1**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xcat-v0.5.1/OM0RX-xCat-v0.5.1-macOS.zip) | — |
 | <img src="images/xcluster-icon.png" width="40" alt=""> | [**OM0RX-xCluster**](apps/xcluster.md) | Mac DX-cluster client that classifies spots against your log and hands them to xLog or RUMlogNG. | — | [**0.1.6**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xcluster-v0.1.6/OM0RX-xCluster-0.1.6-macOS.zip) | — |
 | <img src="images/xbridge-icon.png" width="40" alt=""> | [**OM0RX-xBridge**](apps/xbridge.md) | Mac two-way sync between RUMlogNG and Wavelog (API v2), without ever writing to the RUMlog database. | — | [**0.3.0**](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xbridge-v0.3.0/OM0RX-xBridge-v0.3.0-macOS.zip) | — |
@@ -75,7 +75,7 @@ talks to the FLEX-8400, KPA500 amplifier and KAT500 tuner, keeps band, antenna
 and amplifier aligned, refuses to key on a fault, and serves the station
 securely to xLog and xCat anywhere. [More about xAgent →](apps/xagent.md)
 
-<img src="images/xagent-console.png" width="560" alt="OM0RX-xAgent station console">
+<img src="images/xagent-console-full.png" width="560" alt="OM0RX-xAgent station console">
 
 ### Mac companions: xCat, xCluster, xBridge
 
