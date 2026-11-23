@@ -62,11 +62,13 @@ list.
 | Listening in CW on N2NT, with its copy in the decoder strip | RUN mode: W0PR calling W2RQ, zoomed on the run window |
 | ![NEW and WKD from the log on the band map](../images/xskimmer-needed.png) | ![A Hermes-Lite 2 skimming 40 m and 30 m, waterfall on 30 m](../images/xskimmer-multiband.png) |
 | NEW (Georgia, Puerto Rico) and WKD (dupes, dimmed) from a test log | Two bands at once (dots on 40 and 30); the waterfall shows 30 m |
+| ![xSkimmer's spectrum in N1MM Logger+](../images/xskimmer-n1mm.png) | ![xSkimmer's spectrum in OM0RX-xLog's Panadapter](../images/xskimmer-xlog-panadapter.png) |
+| N1MM Logger+ Spectrum Display | OM0RX-xLog Panadapter, for comparison |
 
 ## Download
 
 <!-- xsuite:downloads -->
-- **Windows** — 1.4.2: [installer](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.2/OM0RX-xSkimmer-1.4.2-setup.exe) 57 MB
+- **Windows** — 1.4.3: [installer](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.3/OM0RX-xSkimmer-1.4.3-setup.exe) 57 MB
 <!-- /xsuite:downloads -->
 
 Requires Windows 10/11 x64 and a FlexRadio (SmartSDR or Maestro running), a
@@ -79,6 +81,7 @@ keeps your settings.
 <!-- xsuite:history -->
 | Version | Date | Platforms | Notes | Source |
 |---|---|---|---|---|
+| 1.4.3 | 2026-11-23 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.4.3) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.3/OM0RX-xSkimmer-1.4.3-source.zip) `8a4080ebd9` |
 | 1.4.2 | 2026-11-22 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.4.2) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.2/OM0RX-xSkimmer-1.4.2-source.zip) `73ea2eae39` |
 | 1.4.1 | 2026-11-22 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.4.1) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.1/OM0RX-xSkimmer-1.4.1-source.zip) `05be4440d4` |
 | 1.4.0 | 2026-11-22 | Windows | [release notes](https://github.com/oliverbross/OM0RX-xSuite/releases/tag/xskimmer-v1.4.0) | [source ZIP](https://github.com/oliverbross/OM0RX-xSuite/releases/download/xskimmer-v1.4.0/OM0RX-xSkimmer-1.4.0-source.zip) `5b9befe95a` |
